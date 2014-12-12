@@ -22,3 +22,20 @@ Suggested steps to complete this assignment
 12. If you have extra time and are looking for a challenge, you might try to add an animation of "rockets" that appear from the back of the ship when you accelerate
 
 These steps are only a suggestion. Your Asteroids game doesn't have to work or act like any other. Have fun and be creative.
+
+
+
+
+
+
+
+convert myPointDirection to radians with the following code: double dRadians =myPointDirection*(Math.PI/180);
+Override the show method of the Floater class so that you can use circular bullets
+Now, add just one bullet to your program. First, just draw it to the screen. Make sure you can see it before continuing to the next step.
+Now, move the bullet.
+Now create an ArrayList of Bullets. The list should be empty to start with. Everytime you press the key to "shoot", add a new Bullet to the ArrayList. Modify the program with loops that draw and move all the bullets in the ArrayList
+One way to check for collisions between the bullets and the Asteroids is to write a loop within a loop (see below for another way). Everytime you move one asteroid you will need:
+a loop that goes through all the bullets to see if there is a collision between that bullet and the asteroid
+if there is a collision remove both the asteroid and the bullet from their ArrayLists
+Alternatively, you might be able to use processing's get() to check for collisions.
+(Note: I'm not sure if this is still true in the current version of Processing)If your finished program is running slowly, try changing size() to use P2D. For example, size(600,600,P2D); creates an applet 600 x 600 that uses processing's fast 2D renderer (which is not as accurate as the default renderer).
